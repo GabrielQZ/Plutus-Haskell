@@ -1,0 +1,3 @@
+It is common practice to add ' to the end of a funciton name when defining a new version of a function with slight variation
+
+to reduce nested () it is common to use $ to indicate the start of a () block
