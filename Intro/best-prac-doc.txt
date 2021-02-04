@@ -1,3 +1,7 @@
 It is common practice to add ' to the end of a funciton name when defining a new version of a function with slight variation
 
 to reduce nested () it is common to use $ to indicate the start of a () block
+
+Tuples vs Lists
+tuples have a set number of elements, list do not
+tuples act more like Java arrays, list are more like the Linked-List class in Java

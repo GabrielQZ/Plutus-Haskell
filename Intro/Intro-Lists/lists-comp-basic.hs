@@ -42,5 +42,25 @@ studentGrades = [50,60..100]
 studentsReport :: [[Char]]
 studentsReport = gradeStudents studentGrades
 
+-- comprehension of multiple list
+-- this example will generate every word combinations by drawing from 3 unique list
+list1 :: [[Char]]
+list1 = ["red", "green", "blue"]
+list2 :: [[Char]]
+list2 = ["1", "2", "3"]
+list3 :: [[Char]]
+list3 = ["ADA", "ETH", "BTC"]
+
+allCombos :: [[Char]]
+allCombos = [one ++ "-" ++ two ++ "-" ++ three | one <- list1, two <- list2, three <- list3]
+-- this operation is equivielent to creating a tripple nested for loop to create each combination
+
+
+-- custom length function
+-- the length function built into Haskell is good, this is just for learning how to work with list better
+myLenFunc :: Num a => [t] -> a
+myLenFunc inputList = sum [1 | _ <- inputList]
+
+
 main :: IO ()
 main = print studentsReport
