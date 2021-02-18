@@ -1,7 +1,26 @@
+Common/Best practices
 It is common practice to add ' to the end of a funciton name when defining a new version of a function with slight variation
 
 to reduce nested () it is common to use $ to indicate the start of a () block
 
+----------------------------------------------------------
 Tuples vs Lists
+
 tuples have a set number of elements, list do not
 tuples act more like Java arrays, list are more like the Linked-List class in Java
+tuples can have elements of multiple types, list are locked to one type
+tuple syntax: () 
+list syntax: []
+
+you can create a list of tuples but each tuple must be contructed in the same way
+
+valid: [("str1", 1), ("str2", 2)]
+
+invalid: [("str3", 3), (4, "str4")]
+-- this is expecting the second tuple to be structured (String, Integer) and the second one breaks this pattern
+
+----------------------------------------------------------
+Tuples vs Triples 
+Triples act the same as a tuple but contain 3 elements
+
+the fst & snd function only works on tuples
